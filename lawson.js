@@ -20631,7 +20631,7 @@
   function cu(a) {
     var b = Date.now(),
     c = b - a.v;
-    0 > c || (c = Math.min(c, 50), a.v = b, a.H(c))
+    0 > c || (c = Math.min(c, 1000), a.v = b, a.H(c))
   }
   var du = class {
     constructor(a) {
